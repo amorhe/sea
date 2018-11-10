@@ -1,0 +1,33 @@
+.logoPng {
+    width: 35%;
+    margin: 50px 0 20px;
+}
+.loginBox {
+    width:90%;
+}
+.loginBox>div {
+    margin-bottom: 12px;
+}
+.rowCode>div {
+    height: 24px;
+}
+.registerBox {
+    margin-top: 60px;
+    width: 280px;
+    font-size: 12px;
+}
+.registerBox input {
+    height: 24px;
+}
+.registerBox>div {
+    margin-bottom: 10px;
+}
+.phone_top {
+    margin-bottom: 10px;
+}
+.phone_top>input,.phoneInput,.phoneCode {
+    height: 24px;
+}
+.phone_top>img,.getCode,.keep {
+    height: 24px;
+}
