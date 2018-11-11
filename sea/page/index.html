@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <title>主页</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/320.css" media="all and (min-width:0) and (max-width:359px)"/>
+    <link rel="stylesheet" href="../css/360.css" media="all and (min-width:360px) and (max-width:399px)"/>
+    <link rel="stylesheet" href="../css/400.css" media="all and (min-width:400px) and (max-width:639px)"/>
+    <link rel="stylesheet" href="../css/640.css" media="all and (min-width:640px) and (max-width:999px)"/>
+    <link rel="stylesheet" href="../css/1000.css" media="all and (min-width:1000px)"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<div>
+    <div class="head_div">
+        <div class="head_left">
+            <img class="listIcon" src="../img/list.png" alt="">
+            <img class="seaIcon" src="../img/sea.png" alt="">
+            <span>欢迎您 15684868464</span>
+        </div>
+        <div class="head_right">
+            <button>客服</button>
+            <div class="closeBtn">
+                <img src="../img/close.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="index_box">
+        <!--左边菜单-->
+        <div class="left_menu">
+            <p>
+                <a class="colorWhite">主页</a>
+            </p>
+            <p>
+                <a href="trade.html">交易中心</a>
+            </p>
+            <p>
+                <a href="team.html">团队</a>
+            </p>
+            <p>
+                <a href="person.html">个人中心</a>
+            </p>
+        </div>
+        <!--上半部分列表-->
+        <div class="content_show">
+            <div class="index_list">
+                <div class="colorWhite">
+                    <div class="index_list_top bg1">
+                        <div>
+                            <img src="../img/lanternW.png" alt="图片">
+                            <span>仓库</span>
+                        </div>
+                        <p>
+                            <span class="countP">11</span>
+                            <span>枚</span>
+                        </p>
+                    </div>
+                    <div class="index_list_bottom">
+                        <button onclick="maichu()">卖出</button>
+                        <button onclick="maichu()">兑换蓝贝壳</button>
+                    </div>
+                </div>
+                <div class="colorWhite">
+                    <div class="index_list_top bg1">
+                        <div>
+                            <img src="../img/lanternW.png" alt="图片">
+                            <span>奖励</span>
+                        </div>
+                        <p>
+                            <span class="countP">11</span>
+                            <span>枚</span>
+                        </p>
+                    </div>
+                    <div class="index_list_bottom">
+                        <button onclick="maichu()">卖出</button>
+                    </div>
+                </div>
+                <div class="colorBlue">
+                    <div class="index_list_top bg2">
+                        <div>
+                            <img src="../img/lanternB.png" alt="图片">
+                            <span>蓝贝壳币</span>
+                        </div>
+                        <p>
+                            <span class="countP">11</span>
+                            <span>枚</span>
+                        </p>
+                    </div>
+                    <div class="index_list_bottom">
+                        <button class="zhuanrang">转让</button>
+                    </div>
+                </div>
+                <div class="colorRed">
+                    <div class="index_list_top bg3">
+                        <div>
+                            <img src="../img/lanternR.png" alt="图片">
+                            <span>红贝壳币</span>
+                        </div>
+                        <p>
+                            <span class="countP">11</span>
+                            <span>枚</span>
+                        </p>
+                    </div>
+                    <div class="index_list_bottom">
+                    </div>
+                </div>
+            </div>
+
+            <!--中间-->
+            <div class="content_box">
+                <p>账单明细</p>
+                <ul>
+                    <li>
+                        <span>种类</span>
+                        <span>数量</span>
+                        <span>来源</span>
+                        <span>余额</span>
+                        <span>日期</span>
+                    </li>
+                    <li>
+                        <span>仓库</span>
+                        <span>11</span>
+                        <span>转入/转出</span>
+                        <span>2000</span>
+                        <span>2018/11/7</span>
+                    </li>
+                    <li>
+                        <span>奖励</span>
+                        <span>11</span>
+                        <span>转入/转出</span>
+                        <span>2000</span>
+                        <span>2018/11/7</span>
+                    </li>
+                    <li>
+                        <span>蓝贝壳币</span>
+                        <span>11</span>
+                        <span>转入/转出</span>
+                        <span>2000</span>
+                        <span>2018/11/7</span>
+                    </li>
+                    <li>
+                        <span>红贝壳币</span>
+                        <span>11</span>
+                        <span>转入/转出</span>
+                        <span>2000</span>
+                        <span>2018/11/7</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content_box">
+                <p>交易明细</p>
+                <ul>
+                    <li>
+                        <span>交易号</span>
+                        <span>数量</span>
+                        <span>类型</span>
+                        <span>日期</span>
+                    </li>
+                    <li>
+                        <span>1000</span>
+                        <span>100</span>
+                        <span>转入/转出</span>
+                        <span>2018/11/7</span>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="pageNum">
+                    <span>共2页 上一页 第1页 下一页  跳转至</span>
+                    <input type="text">
+                    <span>页</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="backdrop"></div>
+
+    <div class="alertCall call">
+        <div>
+            <p class="closeX">x</p>
+        </div>
+        <div class="alertCall_bottom">
+            <span class="fontWeight">客户微信</span>
+            <span>135421534313</span>
+        </div>
+    </div>
+
+    <div class="alertCall setout">
+        <div>
+            <p class="closeX">x</p>
+        </div>
+        <div class="alertCall_down">
+            <div>
+                <p>账号</p>
+                <input class="numInput" type="text">
+            </div>
+            <div>
+                <p>数量</p>
+                <input class="countInput" type="text">
+                <button class="confirm bgBlue">确认</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="alertCall maichu">
+        <div>
+            <p class="closeX">x</p>
+        </div>
+        <div class="alertCall_down">
+            <div>
+                <p>数量</p>
+                <input class="countInput" type="text">
+                <button class="confirm bgBlue">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/public.js"></script>
+</html>

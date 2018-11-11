@@ -1,15 +1,16 @@
+body {
+    font-size: 14px;
+}
 .logoPng {
     width: 26%;
     margin: 90px 0 30px;
 }
 .loginBox {
     width:50%;
+    padding: 13px 14px 6px;
 }
 .loginBox>div {
     margin-bottom: 18px;
-}
-.loginBox input {
-    height: 36px;
 }
 .rowCode>div{
     height: 36px;
@@ -18,18 +19,139 @@
     margin-top: 160px;
     width: 380px;
 }
-.registerBox input {
-    height: 32px;
-}
 .registerBox>div {
     margin-bottom: 18px;
 }
 .phone_top {
     margin-bottom: 16px;
 }
-.phone_top>input,.phoneInput,.phoneCode {
+.phone_top>input,.phoneInput,.phoneCode,.newPwd,.loginBox input,.registerBox input {
     height: 36px;
 }
 .phone_top>img,.getCode,.keep {
     height: 36px;
+}
+.head_div {
+    height: 36px;
+    font-size: 16px;
+}
+.index_box {
+    margin-top: 36px;
+}
+.listIcon {
+    display: none;
+}
+.seaIcon {
+    width: 64px;
+    margin: 0 24px;
+}
+.head_right button {
+    width: 98px;
+    height: 24px;
+}
+.closeBtn {
+    width:64px;
+    height:36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.closeBtn>img {
+    width: 14px;
+    height: 16px;
+}
+.left_menu {
+    width: 20%;
+    text-align: center;
+    background: #407DE1;
+    color: #fff;
+    display: block;
+}
+.left_menu>p {
+    height: 40px;
+    border-bottom: 1px #fff solid;
+    line-height: 40px;
+}
+.content_show {
+    width: 80%;
+    padding: 14px 15px;
+}
+.content_wrap {
+    width: 80%;
+}
+.index_list>div {
+    width: 24%;
+}
+.index_list_top{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 3px 7px;
+    box-sizing: border-box;
+}
+.index_list_top>div {
+    display: flex;
+    align-items: flex-start;
+}
+.index_list_top>div>img {
+    width: 16px;
+    height: 13px;
+}
+.index_list>div>div>p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countP {
+    font-size: 24px;
+}
+.writeInput,.writeCode,.person_btn,keep_btn {
+    height: 20px!important;
+}
+.writeInput {
+    width: 137px;
+}
+.content_step {
+    width: 80%;
+}
+.content_menu p {
+    margin-right: 24px;
+}
+.team_list li {
+    border-bottom: 1px #999 solid;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+.team_list span {
+    display: inline-block;
+    width: 12%;
+}
+.search_box {
+    width: 130px;
+}
+.search_content {
+    display: none;
+}
+.box_list>div {
+     width: 200px;
+ }
+.btn_div {
+    margin: 25px 40px 0 14px;
+}
+.alertCall {
+    left: 60%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -125px;
+}
+.loginBg>div {
+    padding: 90px 0;
 }

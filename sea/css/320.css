@@ -1,9 +1,13 @@
+body {
+    font-size: 14px!important;
+}
 .logoPng {
     width: 35%;
     margin: 50px 0 20px;
 }
 .loginBox {
     width:90%;
+    padding: 10px 12px 6px;
 }
 .loginBox>div {
     margin-bottom: 12px;
@@ -16,18 +20,158 @@
     width: 280px;
     font-size: 12px;
 }
-.registerBox input {
-    height: 24px;
-}
+
 .registerBox>div {
     margin-bottom: 10px;
 }
 .phone_top {
     margin-bottom: 10px;
 }
-.phone_top>input,.phoneInput,.phoneCode {
+.phone_top>input,.phoneInput,.phoneCode,.newPwd,.loginBox input,.registerBox input {
     height: 24px;
 }
 .phone_top>img,.getCode,.keep {
     height: 24px;
+}
+.head_div {
+    height: 24px;
+    font-size: 10px;
+}
+.index_box {
+    margin-top: 24px;
+}
+.listIcon {
+    width: 20px;
+    margin: 0 5px;
+}
+.seaIcon {
+    width: 50px;
+    margin: 0 5px 0 0;
+}
+.head_right button {
+    width: 60px;
+    height: 16px;
+}
+.closeBtn {
+    width:44px;
+    height:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
+.closeBtn>img {
+    width: 10px;
+    height: 12px;
+}
+.content_show {
+    width: 100%;
+    padding: 10px;
+}
+.content_wrap {
+    width: 100%;
+    padding: 10px;
+}
+.index_list>div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.index_list_top{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+}
+.index_list_top>div {
+    display: flex;
+    align-items: flex-start;
+}
+.index_list_top>div>img {
+    width: 16px;
+    height: 13px;
+}
+.index_list>div>div>p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countP {
+    font-size: 50px;
+}
+.writeInput,.writeCode,.person_btn,keep_btn {
+    height: 20px!important;
+}
+.writeInput {
+    width: 80px;
+}
+.im_div {
+    width: 23%;
+}
+.content_step {
+    width: 100%;
+}
+.content_menu p {
+    margin-right: 10px;
+}
+.team_list li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.team_list span:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+}
+.team_list span {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px #999 solid;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.team_head,.pageCount {
+    display: none;
+}
+.box_list>div {
+    width: 100%;
+}
+.left_menu {
+    width: 40%;
+    text-align: center;
+    background: #407DE1;
+    color: #fff;
+    position: fixed;
+    top: 24px;
+    left: -50%;
+    z-index: 10;
+}
+.left_menu>p {
+    height: 75px;
+    border-bottom: 1px #fff solid;
+    line-height: 75px;
+}
+.alertCall {
+    left: 50%;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -125px;
+}
+.loginBox>div>p {
+    margin-bottom: 0;
+}
+.loginBg>div {
+    padding: 40px 0;
 }

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <title>团队</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/320.css" media="all and (min-width:0) and (max-width:359px)"/>
+    <link rel="stylesheet" href="../css/360.css" media="all and (min-width:360px) and (max-width:399px)"/>
+    <link rel="stylesheet" href="../css/400.css" media="all and (min-width:400px) and (max-width:639px)"/>
+    <link rel="stylesheet" href="../css/640.css" media="all and (min-width:640px) and (max-width:999px)"/>
+    <link rel="stylesheet" href="../css/1000.css" media="all and (min-width:1000px)"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<div id="app">
+    <div class="head_div">
+        <div class="head_left">
+            <img class="listIcon" src="../img/list.png" alt="">
+            <img class="seaIcon" src="../img/sea.png" alt="">
+            <span>欢迎您 15684868464</span>
+        </div>
+        <div class="head_right">
+            <button>客服</button>
+            <div class="closeBtn">
+                <img src="../img/close.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="index_box">
+        <!--pc端左边菜单-->
+        <div class="left_menu">
+            <p>
+                <a href="index.html">主页</a>
+            </p>
+            <p>
+                <a href="trade.html">交易中心</a>
+            </p>
+            <p><a class="colorWhite">团队</a></p>
+            <p>
+                <a href="person.html">个人中心</a>
+            </p>
+        </div>
+
+        <div class="content_wrap">
+            <div class="content_menu">
+                <div>
+                    <p :class="isIndex==0?'activeP':''" @click="tabClick(0)">直推数量</p>
+                    <p :class="isIndex==1?'activeP':''" @click="tabClick(1)">团队数量</p>
+                    <p :class="isIndex==2?'activeP':''" @click="tabClick(2)">激活</p>
+                </div>
+                <div>
+                    <span>注册新账号</span>
+                    <div class="add">+</div>
+                </div>
+            </div>
+
+            <!--移动端显示-->
+            <div class="search_content">
+                <input type="text" placeholder="账号/手机号">
+                <img src="../img/search.png" alt="">
+            </div>
+            <!--直推-->
+            <div v-show="isIndex==0">
+                <div class="team_head">
+                    <span>账号</span>
+                    <span>手机号</span>
+                    <span>注册时间</span>
+                    <span>上次排单时间</span>
+                    <span>状态</span>
+                    <span>额度</span>
+                    <div class="search_box">
+                        <input type="text" placeholder="账号/手机号">
+                        <img src="../img/search.png" alt="">
+                    </div>
+                </div>
+                <ul class="team_list">
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="手机号">35463412</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="上次排单时间">2018/5/31</span>
+                        <span data-label="状态">无</span>
+                        <span data-label="额度">2000</span>
+                    </li>
+                </ul>
+                <div class="pageCount">
+                    <span>上一页 第1页 下一页  跳转至</span>
+                    <input type="text">
+                    <span>页</span>
+                </div>
+            </div>
+            <!--团队-->
+            <div v-show="isIndex==1">
+                <div class="team_head">
+                    <span>账号</span>
+                    <span>注册时间</span>
+                    <span>上次排单时间</span>
+                    <span>状态</span>
+                    <span>额度</span>
+                    <div class="search_box">
+                        <input type="text" placeholder="账号/手机号">
+                        <img src="../img/search.png" alt="">
+                    </div>
+                </div>
+                <ul class="team_list">
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="上次排单时间">2018/5/31</span>
+                        <span data-label="状态">无</span>
+                        <span data-label="额度">2000</span>
+                    </li>
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="上次排单时间">2018/5/31</span>
+                        <span data-label="状态">无</span>
+                        <span data-label="额度">2000</span>
+                    </li>
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="上次排单时间">2018/5/31</span>
+                        <span data-label="状态">无</span>
+                        <span data-label="额度">2000</span>
+                    </li>
+                </ul>
+                <div class="pageCount">
+                    <span>上一页 第1页 下一页  跳转至</span>
+                    <input type="text">
+                    <span>页</span>
+                </div>
+            </div>
+            <!--激活-->
+            <div v-show="isIndex==2">
+                <div class="team_head">
+                    <span>账号</span>
+                    <span>手机号</span>
+                    <span>注册时间</span>
+                    <span>状态</span>
+                    <div class="search_box">
+                        <input type="text" placeholder="账号/手机号">
+                        <img src="../img/search.png" alt="">
+                    </div>
+                </div>
+                <ul class="team_list">
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="手机号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="状态"><a class="jh">待激活</a></span>
+                    </li>
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="手机号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="状态">待完善</span>
+                    </li>
+                    <li>
+                        <span data-label="账号">132554</span>
+                        <span data-label="手机号">132554</span>
+                        <span data-label="注册时间">2018/3/4</span>
+                        <span data-label="状态">已完善</span>
+                    </li>
+                </ul>
+                <div class="pageCount">
+                    <span>上一页 第1页 下一页  跳转至</span>
+                    <input type="text">
+                    <span>页</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="backdrop"></div>
+
+    <div class="alertCall call">
+        <div>
+            <p class="closeX">x</p>
+        </div>
+        <div class="alertCall_bottom">
+            <span class="fontWeight">客户微信</span>
+            <span>135421534313</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data(){
+            return {
+                isIndex:0
+            }
+        },
+        methods:{
+            tabClick(index){
+                this.isIndex = index;
+            }
+        }
+    })
+</script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/public.js"></script>
+</html>
