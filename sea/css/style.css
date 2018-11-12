@@ -175,7 +175,6 @@ button {
 .index_list {
     display: flex;
     justify-content: space-between;
-    /*height: 120px;*/
     flex-wrap: wrap;
 }
 
@@ -268,7 +267,8 @@ button {
 }
 .content_step li {
     display: flex;
-    padding: 10px;
+    padding: 10px 0;
+    flex-wrap: wrap;
 }
 .im_div {
     width: 23%;
@@ -277,9 +277,14 @@ button {
 .im_div>span{
     font-weight: bold;
 }
-.writeCode {
+.writeCode{
     width: 52px;
-    margin: 0 10px;
+    margin: 0 5px;
+}
+.yanzhengCode img {
+    width: 52px;
+    height: 100%;
+    margin-left: 4px;
 }
 .person_btn {
     width: 65px;

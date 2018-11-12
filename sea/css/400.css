@@ -6,7 +6,7 @@ body {
     margin: 50px 0 24px;
 }
 .loginBox {
-    width:75%;
+    width:320px;
     padding: 13px 14px 6px;
 }
 .loginBox>div {
@@ -104,12 +104,15 @@ body {
 .countP {
     font-size: 50px;
 }
-.writeInput,.writeCode,.person_btn,keep_btn {
+.writeInput,.writeCode,.person_btn,.keep_btn,.yanzhengCode {
     height: 20px!important;
 }
 .writeInput {
     width: 120px;
 }
+.yanzhengCode {
+     margin: 20px 23% 0;
+ }
 .content_step {
     width: 100%;
 }

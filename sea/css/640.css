@@ -6,7 +6,7 @@ body {
     margin: 90px 0 30px;
 }
 .loginBox {
-    width:50%;
+    width:400px;
     padding: 13px 14px 6px;
 }
 .loginBox>div {
@@ -62,7 +62,7 @@ body {
     height: 16px;
 }
 .left_menu {
-    width: 120px;
+    width: 10%;
     text-align: center;
     background: #407DE1;
     color: #fff;
@@ -74,11 +74,12 @@ body {
     line-height: 40px;
 }
 .content_show {
-    width: 80%;
+    width: 90%;
+    box-sizing: border-box;
     padding: 14px 15px;
 }
 .content_wrap {
-    width: 80%;
+    width: 90%;
 }
 .index_list>div {
     width: 24%;
@@ -112,14 +113,17 @@ body {
 .countP {
     font-size: 24px;
 }
-.writeInput,.writeCode,.person_btn,keep_btn {
+.writeInput,.writeCode,.person_btn,.keep_btn,.yanzhengCode {
     height: 20px!important;
 }
 .writeInput {
     width: 137px;
 }
+.yanzhengCode {
+    margin: 20px 23% 0;
+}
 .content_step {
-    width: 80%;
+    width: 100%;
 }
 .content_menu p {
     margin-right: 24px;

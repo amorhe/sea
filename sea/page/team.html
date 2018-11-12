@@ -49,9 +49,9 @@
         <div class="content_wrap">
             <div class="content_menu">
                 <div>
-                    <p :class="isIndex==0?'activeP':''" @click="tabClick(0)">直推数量</p>
-                    <p :class="isIndex==1?'activeP':''" @click="tabClick(1)">团队数量</p>
-                    <p :class="isIndex==2?'activeP':''" @click="tabClick(2)">激活</p>
+                    <p :class="tabIndex==0?'activeP':''" @click="tabClick(0)">直推:30</p>
+                    <p :class="tabIndex==1?'activeP':''" @click="tabClick(1)">团队:21</p>
+                    <p :class="tabIndex==2?'activeP':''" @click="tabClick(2)">激活</p>
                 </div>
                 <div>
                     <span>注册新账号</span>
@@ -65,7 +65,7 @@
                 <img src="../img/search.png" alt="">
             </div>
             <!--直推-->
-            <div v-show="isIndex==0">
+            <div v-show="tabIndex==0">
                 <div class="team_head">
                     <span>账号</span>
                     <span>手机号</span>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <!--团队-->
-            <div v-show="isIndex==1">
+            <div v-show="tabIndex==1">
                 <div class="team_head">
                     <span>账号</span>
                     <span>注册时间</span>
@@ -137,7 +137,7 @@
                 </div>
             </div>
             <!--激活-->
-            <div v-show="isIndex==2">
+            <div v-show="tabIndex==2">
                 <div class="team_head">
                     <span>账号</span>
                     <span>手机号</span>
@@ -191,21 +191,21 @@
 </div>
 </body>
 <script src="../js/vue.js"></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="../js/public.js"></script>
 <script>
     new Vue({
         el:"#app",
         data(){
             return {
-                isIndex:0
+                tabIndex:0
             }
         },
         methods:{
             tabClick(index){
-                this.isIndex = index;
+                this.tabIndex = index;
             }
         }
     })
 </script>
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="../js/public.js"></script>
 </html>
