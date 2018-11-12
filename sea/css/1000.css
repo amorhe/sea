@@ -37,11 +37,11 @@ body {
     height: 40px;
 }
 .head_div {
-    height: 63px;
+    height: 40px;
     font-size: 18px;
 }
 .index_box {
-    margin-top: 63px;
+    margin-top: 40px;
 }
 .listIcon {
     display: none;
@@ -56,7 +56,7 @@ body {
 }
 .closeBtn {
     width:120px;
-    height:63px;
+    height:40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@ body {
     height: 24px;
 }
 .left_menu {
-    width: 20%;
+    width: 150px;
     text-align: center;
     background: #407DE1;
     color: #fff;
