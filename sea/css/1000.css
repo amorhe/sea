@@ -2,24 +2,22 @@ body {
     font-size: 14px;
 }
 .logoPng {
-    width: 20.88%;
-    /*margin: 122px 0 37px;*/
+    width:80%;
+    margin-bottom: 40px;
 }
 .loginBox {
     width:400px;
-    padding: 13px 24px 6px;
+    padding: 14px 24px 0;
 }
 .loginBox>div {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
-.loginBg>div {
-    padding: 160px 0;
-}
+
 .rowCode>div{
     height: 40px;
 }
 .registerBox {
-    width: 600px;
+    width: 500px;
 }
 .registerBox input {
     width: 80%;
@@ -118,7 +116,7 @@ body {
 .countP {
     font-size: 30px;
 }
-.writeInput,.writeCode,.person_btn,.keep_btn,.yanzhengCode {
+.writeInput,.writeCode,.person_btn,.keep_btn,.yanzhengCode,.yanzhengInput {
     height: 24px!important;
 }
 .writeInput {
@@ -157,4 +155,7 @@ body {
     top: 50%;
     margin-top: -40px;
     margin-left: -125px;
+}
+.loginBox>div>p {
+    margin-bottom: 4px;
 }
