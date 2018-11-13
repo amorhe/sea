@@ -62,8 +62,8 @@
                         </p>
                     </div>
                     <div class="index_list_bottom">
-                        <button onclick="maichu()">卖出</button>
-                        <button onclick="maichu()">兑换蓝贝壳</button>
+                        <button onclick="maichu(1)">卖出</button>
+                        <button onclick="maichu(2)">兑换蓝贝壳</button>
                     </div>
                 </div>
                 <div class="colorWhite">
@@ -78,7 +78,7 @@
                         </p>
                     </div>
                     <div class="index_list_bottom">
-                        <button onclick="maichu()">卖出</button>
+                        <button onclick="maichu(3)">卖出</button>
                     </div>
                 </div>
                 <div class="colorBlue">
@@ -153,7 +153,7 @@
                     </li>
                 </ul>
                 <div class="pageNum">
-                    <span>共2页 上一页 第1页 下一页  跳转至</span>
+                    <span>共2页 <a>上一页</a> 第1页 <a>下一页</a>  跳转至</span>
                     <input type="text">
                     <span>页</span>
                 </div>
@@ -181,7 +181,7 @@
                     <li></li>
                 </ul>
                 <div class="pageNum">
-                    <span>共2页 上一页 第1页 下一页  跳转至</span>
+                    <span>共2页 <a>上一页</a> 第1页 <a>下一页</a>  跳转至</span>
                     <input type="text">
                     <span>页</span>
                 </div>
@@ -191,9 +191,10 @@
     </div>
     <div class="backdrop"></div>
 
+    <!--客服-->
     <div class="alertCall call">
         <div>
-            <p class="closeX">x</p>
+            <p class="closeX guanbi">x</p>
         </div>
         <div class="alertCall_bottom">
             <span class="fontWeight">客户微信</span>
@@ -201,9 +202,10 @@
         </div>
     </div>
 
+    <!--转让-->
     <div class="alertCall setout">
         <div>
-            <p class="closeX">x</p>
+            <p class="closeX guanbi">x</p>
         </div>
         <div class="alertCall_down">
             <div>
@@ -213,20 +215,21 @@
             <div>
                 <p>数量</p>
                 <input class="countInput" type="text">
-                <button class="confirm bgBlue">确认</button>
+                <button class="confirm bgBlue guanbi">确认</button>
             </div>
         </div>
     </div>
 
+    <!--卖出、兑换蓝贝壳-->
     <div class="alertCall maichu">
         <div>
-            <p class="closeX">x</p>
+            <p class="closeX guanbi">x</p>
         </div>
         <div class="alertCall_down">
             <div>
                 <p>数量</p>
                 <input class="countInput" type="text">
-                <button class="confirm bgBlue">确认</button>
+                <button class="confirm bgBlue guanbi">确认</button>
             </div>
         </div>
     </div>
@@ -234,4 +237,23 @@
 </body>
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="../js/public.js"></script>
+<script>
+    //卖出、兑换
+    function maichu(index) {
+        switch (index) {
+            case 1:
+                alert('您点击了第一个卖出按钮')
+                $('.maichu').show()
+                break;
+            case 2:
+                alert('您点击了兑换蓝贝壳按钮')
+                $('.maichu').show()
+                break;
+            case 3:
+                alert('您点击了第二个卖出按钮')
+                $('.maichu').show()
+                break
+        }
+    }
+</script>
 </html>

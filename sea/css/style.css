@@ -6,7 +6,8 @@ ul,li {
     list-style-type: none;
 }
 a {
-    text-decoration: none;
+    text-decoration: none!important;
+    cursor: pointer;
 }
 
 html{font-size: 62.5%;min-width: 320px;}
@@ -170,7 +171,7 @@ button {
     color: rgba(255,255,255,.7);
 }
 .left_menu a:hover {
-    color: #fff;
+    color: #fff!important;
     text-decoration: none;
 }
 .index_box {
@@ -196,7 +197,7 @@ button {
     border-radius: 3px;
 }
 .colorWhite {
-    color: #fff!important;
+    color: rgba(255,255,255,1)!important;
 }
 .bg1 {
     background: rgb(91,144,230);
@@ -250,6 +251,9 @@ button {
     text-align: right;
     margin: 10px;
 }
+.pageNum a,.pageCount a,.pageCount a:hover,.pageNum a:hover {
+    color: #333;
+}
 .pageNum>input,.pageCount>input {
     width: 40px;
 }
@@ -257,6 +261,7 @@ button {
     text-align: left;
     margin: 10px;
 }
+
 /*个人中心*/
 .content_step {
     padding-bottom: 60px;
@@ -382,7 +387,7 @@ button {
     height:20px;
     background:rgba(232,65,70,1);
     border-radius:3px;
-    color: #fff;
+    color: #fff!important;
     display: inline-block;
     text-align: center;
     line-height: 20px;
